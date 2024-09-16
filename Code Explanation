@@ -1,0 +1,45 @@
+Hand Gesture Controlled Presentation with OpenCV and Python | Interac…
+…tive Slide Navigation
+
+Hand Gesture Controlled Presentation Tool using Python and OpenCV
+Overview
+This project demonstrates how to create a hand-gesture-controlled presentation tool using Python, OpenCV, and the cvzone.HandTrackingModule. The application allows you to navigate through slides and annotate them using simple hand gestures, making your presentations more interactive and engaging.
+
+Features
+Hand Gesture Recognition: Detects and tracks hand movements using a webcam, enabling gesture-based controls.
+Slide Navigation: Navigate through presentation slides using specific hand gestures (left, right).
+Annotation Mode: Draw annotations directly on slides using your index finger.
+Undo Functionality: Easily remove the last annotation with a specific hand gesture.
+How It Works
+Hand Detection: The tool uses the cvzone.HandTrackingModule to detect and track the user's hand through a webcam feed.
+Gesture Recognition: Recognizes different hand gestures (e.g., left swipe, right swipe, index finger up) to control slide navigation and annotations.
+Slide Management: Loads a folder of images (slides) and displays them in fullscreen. The slides can be navigated based on detected gestures.
+Annotation: Draws on the slide using the detected position of the index finger when in drawing mode.
+Requirements
+Python 3.x
+OpenCV (cv2)
+cvzone (HandTrackingModule)
+NumPy
+Webcam
+You can install the necessary Python packages using the following command:
+pip install opencv-python cvzone numpy
+
+Clone this repository to your local machine:
+git clone https://github.com/yourusername/hand-gesture-presentation-tool.git
+cd hand-gesture-presentation-tool
+Place your presentation images in the Presentation folder. Ensure the images are named in a sequence (e.g., slide1.png, slide2.png) for smooth navigation.
+
+Run the script:
+python hand_gesture_presentation.py
+Use the following gestures to control the presentation:
+
+Swipe Left: Navigate to the previous slide.
+Swipe Right: Navigate to the next slide.
+Index Finger Up: Draw on the slide.
+Two Fingers Up: Move the cursor without drawing.
+Undo Gesture: Remove the last annotation.
+Demo
+Watch a demonstration of this tool on my YouTube channel.
+
+Contributions
+Contributions are welcome! Feel free to fork this repository and submit pull requests.
